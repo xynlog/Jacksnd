@@ -1,0 +1,116 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260911162259
+Username: 联想2020\Administrator
+RunAs User: 联想2020\Administrator
+Configuration Name: 
+Machine: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Install
+Process ID: 1132
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Install；时间：2026-09-11 16:22:59
+日志：F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\install.log
+检查本机环境，请稍候。
+使用 Python：F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\.venv\Scripts\python.exe
+安装依赖和 FFmpeg；下载进度会持续显示。网络中断后可以重新运行。
+Looking in links: c:\Users\Administrator\AppData\Local\Temp\tmps5szgndd
+Requirement already satisfied: pip in .\.venv\Lib\site-packages (26.2.1)
+Requirement already satisfied: Pillow<13,>=10.4 in .\.venv\Lib\site-packages (from -r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 1)) (12.3.0)
+Requirement already satisfied: imageio-ffmpeg<0.7,>=0.5.1 in .\.venv\Lib\site-packages (from -r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 2)) (0.6.0)
+Requirement already satisfied: keyring<27,>=25 in .\.venv\Lib\site-packages (from -r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3)) (25.7.0)
+Requirement already satisfied: pywin32-ctypes>=0.2.0 in .\.venv\Lib\site-packages (from keyring<27,>=25->-r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3)) (0.2.3)
+Requirement already satisfied: jaraco.classes in .\.venv\Lib\site-packages (from keyring<27,>=25->-r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3)) (3.4.0)
+Requirement already satisfied: jaraco.functools in .\.venv\Lib\site-packages (from keyring<27,>=25->-r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3)) (4.6.0)
+Requirement already satisfied: jaraco.context in .\.venv\Lib\site-packages (from keyring<27,>=25->-r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3)) (6.1.2)
+Requirement already satisfied: more-itertools in .\.venv\Lib\site-packages (from jaraco.classes->keyring<27,>=25->-r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3)) (11.1.0)
+检查 Python、依赖和 FFmpeg 是否能够实际运行。
+Python: 3.13.15 64 位
+PIL.Image 就绪
+imageio_ffmpeg 就绪
+keyring 就绪
+ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+本机文件选择窗口: 可用
+语音识别扩展: 可选，未安装
+运行模式：仅监听 127.0.0.1；无需手动编辑 .env 文件。
+安装和运行检查完成。双击 启动工作台.bat 即可使用。
+**********************
+Windows PowerShell transcript end
+End time: 20260911162304
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260912080232
+Username: 联想2020\Administrator
+RunAs User: 联想2020\Administrator
+Configuration Name: 
+Machine: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Install
+Process ID: 49376
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Install；时间：2026-09-12 08:02:32
+日志：F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\install.log
+检查本机环境，请稍候。
+使用 Python：D:\软件安装\新建文件夹\python.exe
+创建本机运行环境。
+安装依赖和 FFmpeg；下载进度会持续显示。网络中断后可以重新运行。
+Looking in links: c:\Users\Administrator\AppData\Local\Temp\tmpnqy1stxe
+Requirement already satisfied: pip in .\.venv\Lib\site-packages (26.2.1)
+Collecting Pillow<13,>=10.4 (from -r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 1))
+  Using cached pillow-12.3.0-cp313-cp313-win_amd64.whl.metadata (9.3 kB)
+Collecting imageio-ffmpeg<0.7,>=0.5.1 (from -r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 2))
+  Using cached imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl.metadata (1.5 kB)
+Collecting keyring<27,>=25 (from -r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3))
+  Using cached keyring-25.7.0-py3-none-any.whl.metadata (21 kB)
+Collecting pywin32-ctypes>=0.2.0 (from keyring<27,>=25->-r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3))
+  Using cached pywin32_ctypes-0.2.3-py3-none-any.whl.metadata (3.9 kB)
+Collecting jaraco.classes (from keyring<27,>=25->-r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3))
+  Using cached jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting jaraco.functools (from keyring<27,>=25->-r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3))
+  Using cached jaraco_functools-4.6.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting jaraco.context (from keyring<27,>=25->-r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3))
+  Using cached jaraco_context-6.1.2-py3-none-any.whl.metadata (4.2 kB)
+Collecting more-itertools (from jaraco.classes->keyring<27,>=25->-r F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3))
+  Using cached more_itertools-11.1.0-py3-none-any.whl.metadata (41 kB)
+Using cached pillow-12.3.0-cp313-cp313-win_amd64.whl (7.2 MB)
+Using cached imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl (31.2 MB)
+Using cached keyring-25.7.0-py3-none-any.whl (39 kB)
+Using cached pywin32_ctypes-0.2.3-py3-none-any.whl (30 kB)
+Using cached jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
+Using cached jaraco_context-6.1.2-py3-none-any.whl (7.9 kB)
+Using cached jaraco_functools-4.6.0-py3-none-any.whl (11 kB)
+Using cached more_itertools-11.1.0-py3-none-any.whl (72 kB)
+Installing collected packages: pywin32-ctypes, Pillow, more-itertools, jaraco.context, imageio-ffmpeg, jaraco.functools, jaraco.classes, keyring
+
+Successfully installed Pillow-12.3.0 imageio-ffmpeg-0.6.0 jaraco.classes-3.4.0 jaraco.context-6.1.2 jaraco.functools-4.6.0 keyring-25.7.0 more-itertools-11.1.0 pywin32-ctypes-0.2.3
+检查 Python、依赖和 FFmpeg 是否能够实际运行。
+Python: 3.13.15 64 位
+PIL.Image 就绪
+imageio_ffmpeg 就绪
+keyring 就绪
+ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+本机文件选择窗口: 可用
+语音识别扩展: 可选，未安装
+运行模式：仅监听 127.0.0.1；无需手动编辑 .env 文件。
+安装和运行检查完成。双击 启动工作台.bat 即可使用。
+**********************
+Windows PowerShell transcript end
+End time: 20260912080252
+**********************

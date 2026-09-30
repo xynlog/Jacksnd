@@ -1,0 +1,3072 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260910142307
+Username: 联想2020\Administrator
+RunAs User: 联想2020\Administrator
+Configuration Name: 
+Machine: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Start
+Process ID: 33052
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Start；时间：2026-09-10 14:23:07
+日志：F:\视频拆解分析\VideoRemixStudio_v0.2.17\start.log
+检查本机环境，请稍候。
+使用 Python：D:\软件安装\新建文件夹\python.exe
+创建本机运行环境。
+安装依赖和 FFmpeg；下载进度会持续显示。网络中断后可以重新运行。
+Looking in links: c:\Users\Administrator\AppData\Local\Temp\tmpvm8sv92z
+Requirement already satisfied: pip in .\.venv\Lib\site-packages (26.2.1)
+Collecting Pillow<13,>=10.4 (from -r F:\视频拆解分析\VideoRemixStudio_v0.2.17\requirements.txt (line 1))
+  Using cached pillow-12.3.0-cp313-cp313-win_amd64.whl.metadata (9.3 kB)
+Collecting imageio-ffmpeg<0.7,>=0.5.1 (from -r F:\视频拆解分析\VideoRemixStudio_v0.2.17\requirements.txt (line 2))
+  Using cached imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl.metadata (1.5 kB)
+Collecting keyring<27,>=25 (from -r F:\视频拆解分析\VideoRemixStudio_v0.2.17\requirements.txt (line 3))
+  Using cached keyring-25.7.0-py3-none-any.whl.metadata (21 kB)
+Collecting pywin32-ctypes>=0.2.0 (from keyring<27,>=25->-r F:\视频拆解分析\VideoRemixStudio_v0.2.17\requirements.txt (line 3))
+  Using cached pywin32_ctypes-0.2.3-py3-none-any.whl.metadata (3.9 kB)
+Collecting jaraco.classes (from keyring<27,>=25->-r F:\视频拆解分析\VideoRemixStudio_v0.2.17\requirements.txt (line 3))
+  Using cached jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting jaraco.functools (from keyring<27,>=25->-r F:\视频拆解分析\VideoRemixStudio_v0.2.17\requirements.txt (line 3))
+  Using cached jaraco_functools-4.6.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting jaraco.context (from keyring<27,>=25->-r F:\视频拆解分析\VideoRemixStudio_v0.2.17\requirements.txt (line 3))
+  Using cached jaraco_context-6.1.2-py3-none-any.whl.metadata (4.2 kB)
+Collecting more-itertools (from jaraco.classes->keyring<27,>=25->-r F:\视频拆解分析\VideoRemixStudio_v0.2.17\requirements.txt (line 3))
+  Using cached more_itertools-11.1.0-py3-none-any.whl.metadata (41 kB)
+Using cached pillow-12.3.0-cp313-cp313-win_amd64.whl (7.2 MB)
+Using cached imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl (31.2 MB)
+Using cached keyring-25.7.0-py3-none-any.whl (39 kB)
+Using cached pywin32_ctypes-0.2.3-py3-none-any.whl (30 kB)
+Using cached jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
+Using cached jaraco_context-6.1.2-py3-none-any.whl (7.9 kB)
+Using cached jaraco_functools-4.6.0-py3-none-any.whl (11 kB)
+Using cached more_itertools-11.1.0-py3-none-any.whl (72 kB)
+Installing collected packages: pywin32-ctypes, Pillow, more-itertools, jaraco.context, imageio-ffmpeg, jaraco.functools, jaraco.classes, keyring
+
+Successfully installed Pillow-12.3.0 imageio-ffmpeg-0.6.0 jaraco.classes-3.4.0 jaraco.context-6.1.2 jaraco.functools-4.6.0 keyring-25.7.0 more-itertools-11.1.0 pywin32-ctypes-0.2.3
+检查 Python、依赖和 FFmpeg 是否能够实际运行。
+Python: 3.13.15 64 位
+PIL.Image 就绪
+imageio_ffmpeg 就绪
+keyring 就绪
+ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+本机文件选择窗口: 可用
+语音识别扩展: 可选，未安装
+运行模式：仅监听 127.0.0.1；无需手动编辑 .env 文件。
+正在打开工作台。请保留此后台窗口，退出后台可按 Ctrl+C。
+视频重创工作台 v0.2.17 已启动。
+本机地址：http://127.0.0.1:51611
+作品存储：F:\视频拆解分析\数据
+请保持此启动窗口运行；按 Ctrl+C 退出。
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 54727)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 55022)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 64581)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 64037)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58103)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58563)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+--------------------------------------------------------------------------------  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+Exception occurred during processing of request from
+('127.0.0.1', 55811)
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+Exception occurred during processing of request fromConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+('127.0.0.1', 65465)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.17\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+**********************
+Windows PowerShell transcript start
+Start time: 20260910144612
+Username: 联想2020\Administrator
+RunAs User: 联想2020\Administrator
+Configuration Name: 
+Machine: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Start
+Process ID: 49480
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Start；时间：2026-09-10 14:46:12
+日志：F:\视频拆解分析\VideoRemixStudio_v0.2.18\start.log
+检查本机环境，请稍候。
+本机环境可用，直接复用。
+正在打开工作台。请保留此后台窗口，退出后台可按 Ctrl+C。
+视频重创工作台 v0.2.18 已启动。
+本机地址：http://127.0.0.1:51039
+作品存储：F:\视频拆解分析\数据
+请保持此启动窗口运行；按 Ctrl+C 退出。
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 57996)
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 419, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socket.py", line 723, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 63253)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 54993)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58532)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 60895)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 53079)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 56336)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51888)
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 419, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socket.py", line 723, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58710)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 57925)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52275)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 55860)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51053)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 62623)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 56952)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49847)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59497)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 64255)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 57294)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 50460)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------------------------------------------------------------------------------------------  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+----------------------------------------
+Exception occurred during processing of request from----------------------------------------
+ ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+Exception occurred during processing of request from('127.0.0.1', 50652)
+ ('127.0.0.1', 56150)
+System.Management.Automation.RemoteException
+Exception occurred during processing of request from
+Exception occurred during processing of request from
+ Exception occurred during processing of request from('127.0.0.1', 61333)('127.0.0.1', 55605)
+('127.0.0.1', 53086)
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+**********************
+Windows PowerShell transcript start
+Start time: 20260910162509
+Username: 联想2020\Administrator
+RunAs User: 联想2020\Administrator
+Configuration Name: 
+Machine: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Start
+Process ID: 30668
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Start；时间：2026-09-10 16:25:09
+日志：F:\视频拆解分析\VideoRemixStudio_v0.2.18\start.log
+检查本机环境，请稍候。
+本机环境可用，直接复用。
+正在打开工作台。请保留此后台窗口，退出后台可按 Ctrl+C。
+视频重创工作台 v0.2.18 已启动。
+本机地址：http://127.0.0.1:62650
+作品存储：F:\视频拆解分析\数据
+请保持此启动窗口运行；按 Ctrl+C 退出。
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 60631)
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 55842)
+Traceback (most recent call last):
+Traceback (most recent call last):
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 53283)
+Traceback (most recent call last):
+----------------------------------------
+Exception occurred during processing of request from ----------------------------------------('127.0.0.1', 55374)
+System.Management.Automation.RemoteException
+Exception occurred during processing of request fromTraceback (most recent call last):
+ ('127.0.0.1', 51047)
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+System.Management.Automation.RemoteException
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+----------------------------------------
+----------------------------------------  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+System.Management.Automation.RemoteException
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 57904)
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------------------------------------------------  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+System.Management.Automation.RemoteException
+Exception occurred during processing of request fromException occurred during processing of request from ('127.0.0.1', 64200)
+ ('127.0.0.1', 61290)
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+**********************
+Windows PowerShell transcript start
+Start time: 20260911162214
+Username: 联想2020\Administrator
+RunAs User: 联想2020\Administrator
+Configuration Name: 
+Machine: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Start
+Process ID: 11192
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Start；时间：2026-09-11 16:22:14
+日志：F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\start.log
+检查本机环境，请稍候。
+本机环境可用，直接复用。
+正在打开工作台。请保留此后台窗口，退出后台可按 Ctrl+C。
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\launcher.py", line 94, in <module>
+    main()
+    ~~~~^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\launcher.py", line 75, in main
+    service = Service(cfg, args.data_dir)
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\service.py", line 53, in __init__
+    raise UserError("上次使用的存储目录不可访问，请连接对应硬盘；不会新建空库覆盖历史。")
+studio.util.UserError: 上次使用的存储目录不可访问，请连接对应硬盘；不会新建空库覆盖历史。
+PS>TerminatingError(): "命令未完成，返回码：1 (0x00000001)"
+未完成：命令未完成，返回码：1 (0x00000001)
+命令未完成，返回码：1 (0x00000001)
+At F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\scripts\windows_install_common.ps1:112 char:24
++ ... $Code -ne 0) { throw ('命令未完成，返回码：' + (Format-StudioExitCode $Code)) }
++                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (命令未完成，返回码：1 (0x00000001):String) [], RuntimeException
+    + FullyQualifiedErrorId : 命令未完成，返回码：1 (0x00000001)
+请保留本窗口及 install.log / start.log；Python 安装详情保存在 logs 文件夹。
+**********************
+Windows PowerShell transcript end
+End time: 20260911162218
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260911162251
+Username: 联想2020\Administrator
+RunAs User: 联想2020\Administrator
+Configuration Name: 
+Machine: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Start
+Process ID: 26288
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Start；时间：2026-09-11 16:22:51
+日志：F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\start.log
+检查本机环境，请稍候。
+本机环境可用，直接复用。
+正在打开工作台。请保留此后台窗口，退出后台可按 Ctrl+C。
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\launcher.py", line 94, in <module>
+    main()
+    ~~~~^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\launcher.py", line 75, in main
+    service = Service(cfg, args.data_dir)
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\service.py", line 53, in __init__
+    raise UserError("上次使用的存储目录不可访问，请连接对应硬盘；不会新建空库覆盖历史。")
+studio.util.UserError: 上次使用的存储目录不可访问，请连接对应硬盘；不会新建空库覆盖历史。
+PS>TerminatingError(): "命令未完成，返回码：1 (0x00000001)"
+未完成：命令未完成，返回码：1 (0x00000001)
+命令未完成，返回码：1 (0x00000001)
+At F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\scripts\windows_install_common.ps1:112 char:24
++ ... $Code -ne 0) { throw ('命令未完成，返回码：' + (Format-StudioExitCode $Code)) }
++                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (命令未完成，返回码：1 (0x00000001):String) [], RuntimeException
+    + FullyQualifiedErrorId : 命令未完成，返回码：1 (0x00000001)
+请保留本窗口及 install.log / start.log；Python 安装详情保存在 logs 文件夹。
+**********************
+Windows PowerShell transcript end
+End time: 20260911162252
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260911162311
+Username: 联想2020\Administrator
+RunAs User: 联想2020\Administrator
+Configuration Name: 
+Machine: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Start
+Process ID: 29236
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Start；时间：2026-09-11 16:23:11
+日志：F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\start.log
+检查本机环境，请稍候。
+本机环境可用，直接复用。
+正在打开工作台。请保留此后台窗口，退出后台可按 Ctrl+C。
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\launcher.py", line 94, in <module>
+    main()
+    ~~~~^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\launcher.py", line 75, in main
+    service = Service(cfg, args.data_dir)
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\service.py", line 53, in __init__
+    raise UserError("上次使用的存储目录不可访问，请连接对应硬盘；不会新建空库覆盖历史。")
+studio.util.UserError: 上次使用的存储目录不可访问，请连接对应硬盘；不会新建空库覆盖历史。
+PS>TerminatingError(): "命令未完成，返回码：1 (0x00000001)"
+未完成：命令未完成，返回码：1 (0x00000001)
+命令未完成，返回码：1 (0x00000001)
+At F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\scripts\windows_install_common.ps1:112 char:24
++ ... $Code -ne 0) { throw ('命令未完成，返回码：' + (Format-StudioExitCode $Code)) }
++                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (命令未完成，返回码：1 (0x00000001):String) [], RuntimeException
+    + FullyQualifiedErrorId : 命令未完成，返回码：1 (0x00000001)
+请保留本窗口及 install.log / start.log；Python 安装详情保存在 logs 文件夹。
+**********************
+Windows PowerShell transcript end
+End time: 20260911162312
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260912073713
+Username: PC-202511221155\Administrator
+RunAs User: PC-202511221155\Administrator
+Configuration Name: 
+Machine: PC-202511221155 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Start
+Process ID: 20448
+PSVersion: 5.1.26100.9168
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9168
+BuildVersion: 10.0.26100.9168
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Start；时间：2026-09-12 07:37:13
+日志：E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\start.log
+检查本机环境，请稍候。
+使用 Python：C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe
+已保留旧运行环境，正在为本机重新创建。
+创建本机运行环境。
+安装依赖和 FFmpeg；下载进度会持续显示。网络中断后可以重新运行。
+Looking in links: c:\Users\ADMINI~1\AppData\Local\Temp\tmp_eb5o67l
+Requirement already satisfied: pip in .\.venv\Lib\site-packages (26.2.1)
+Collecting Pillow<13,>=10.4 (from -r E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 1))
+  Using cached pillow-12.3.0-cp313-cp313-win_amd64.whl.metadata (9.3 kB)
+Collecting imageio-ffmpeg<0.7,>=0.5.1 (from -r E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 2))
+  Using cached imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl.metadata (1.5 kB)
+Collecting keyring<27,>=25 (from -r E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3))
+  Using cached keyring-25.7.0-py3-none-any.whl.metadata (21 kB)
+Collecting pywin32-ctypes>=0.2.0 (from keyring<27,>=25->-r E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3))
+  Using cached pywin32_ctypes-0.2.3-py3-none-any.whl.metadata (3.9 kB)
+Collecting jaraco.classes (from keyring<27,>=25->-r E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3))
+  Using cached jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting jaraco.functools (from keyring<27,>=25->-r E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3))
+  Using cached jaraco_functools-4.6.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting jaraco.context (from keyring<27,>=25->-r E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3))
+  Using cached jaraco_context-6.1.2-py3-none-any.whl.metadata (4.2 kB)
+Collecting more-itertools (from jaraco.classes->keyring<27,>=25->-r E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\requirements.txt (line 3))
+  Using cached more_itertools-11.1.0-py3-none-any.whl.metadata (41 kB)
+Using cached pillow-12.3.0-cp313-cp313-win_amd64.whl (7.2 MB)
+Using cached imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl (31.2 MB)
+Using cached keyring-25.7.0-py3-none-any.whl (39 kB)
+Using cached pywin32_ctypes-0.2.3-py3-none-any.whl (30 kB)
+Using cached jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
+Using cached jaraco_context-6.1.2-py3-none-any.whl (7.9 kB)
+Using cached jaraco_functools-4.6.0-py3-none-any.whl (11 kB)
+Using cached more_itertools-11.1.0-py3-none-any.whl (72 kB)
+Installing collected packages: pywin32-ctypes, Pillow, more-itertools, jaraco.context, imageio-ffmpeg, jaraco.functools, jaraco.classes, keyring
+
+Successfully installed Pillow-12.3.0 imageio-ffmpeg-0.6.0 jaraco.classes-3.4.0 jaraco.context-6.1.2 jaraco.functools-4.6.0 keyring-25.7.0 more-itertools-11.1.0 pywin32-ctypes-0.2.3
+检查 Python、依赖和 FFmpeg 是否能够实际运行。
+Python: 3.13.15 64 位
+PIL.Image 就绪
+imageio_ffmpeg 就绪
+keyring 就绪
+ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+本机文件选择窗口: 可用
+语音识别扩展: 可选，未安装
+运行模式：仅监听 127.0.0.1；无需手动编辑 .env 文件。
+正在打开工作台。请保留此后台窗口，退出后台可按 Ctrl+C。
+Traceback (most recent call last):
+  File "E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\launcher.py", line 94, in <module>
+    main()
+    ~~~~^^
+  File "E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\launcher.py", line 75, in main
+    service = Service(cfg, args.data_dir)
+  File "E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\service.py", line 53, in __init__
+    raise UserError("上次使用的存储目录不可访问，请连接对应硬盘；不会新建空库覆盖历史。")
+studio.util.UserError: 上次使用的存储目录不可访问，请连接对应硬盘；不会新建空库覆盖历史。
+PS>TerminatingError(): "命令未完成，返回码：1 (0x00000001)"
+未完成：命令未完成，返回码：1 (0x00000001)
+命令未完成，返回码：1 (0x00000001)
+At E:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\scripts\windows_install_common.ps1:112 char:24
++ ... $Code -ne 0) { throw ('命令未完成，返回码：' + (Format-StudioExitCode $Code)) }
++                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (命令未完成，返回码：1 (0x00000001):String) [], RuntimeException
+    + FullyQualifiedErrorId : 命令未完成，返回码：1 (0x00000001)
+请保留本窗口及 install.log / start.log；Python 安装详情保存在 logs 文件夹。
+**********************
+Windows PowerShell transcript end
+End time: 20260912073726
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260912080308
+Username: 联想2020\Administrator
+RunAs User: 联想2020\Administrator
+Configuration Name: 
+Machine: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Start
+Process ID: 30360
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Start；时间：2026-09-12 08:03:08
+日志：F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\start.log
+检查本机环境，请稍候。
+本机环境可用，直接复用。
+正在打开工作台。请保留此后台窗口，退出后台可按 Ctrl+C。
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\launcher.py", line 94, in <module>
+    main()
+    ~~~~^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\launcher.py", line 75, in main
+    service = Service(cfg, args.data_dir)
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\service.py", line 53, in __init__
+    raise UserError("上次使用的存储目录不可访问，请连接对应硬盘；不会新建空库覆盖历史。")
+studio.util.UserError: 上次使用的存储目录不可访问，请连接对应硬盘；不会新建空库覆盖历史。
+PS>TerminatingError(): "命令未完成，返回码：1 (0x00000001)"
+未完成：命令未完成，返回码：1 (0x00000001)
+命令未完成，返回码：1 (0x00000001)
+At F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\scripts\windows_install_common.ps1:112 char:24
++ ... $Code -ne 0) { throw ('命令未完成，返回码：' + (Format-StudioExitCode $Code)) }
++                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (命令未完成，返回码：1 (0x00000001):String) [], RuntimeException
+    + FullyQualifiedErrorId : 命令未完成，返回码：1 (0x00000001)
+请保留本窗口及 install.log / start.log；Python 安装详情保存在 logs 文件夹。
+**********************
+Windows PowerShell transcript end
+End time: 20260912080309
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260912080710
+Username: 联想2020\Administrator
+RunAs User: 联想2020\Administrator
+Configuration Name: 
+Machine: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Start
+Process ID: 17756
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Start；时间：2026-09-12 08:07:10
+日志：F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\start.log
+检查本机环境，请稍候。
+本机环境可用，直接复用。
+正在打开工作台。请保留此后台窗口，退出后台可按 Ctrl+C。
+视频重创工作台 v0.2.18 已启动。
+本机地址：http://127.0.0.1:52075
+作品存储：F:\BaiduSyncdisk\Ai工具\视频拆解分析\数据
+请保持此启动窗口运行；按 Ctrl+C 退出。
+**********************
+Windows PowerShell transcript start
+Start time: 20260917115409
+Username: 联想2020\Administrator
+RunAs User: 联想2020\Administrator
+Configuration Name: 
+Machine: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Start
+Process ID: 25572
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Start；时间：2026-09-17 11:54:09
+日志：F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\start.log
+检查本机环境，请稍候。
+本机环境可用，直接复用。
+正在打开工作台。请保留此后台窗口，退出后台可按 Ctrl+C。
+视频重创工作台 v0.2.18 已启动。
+本机地址：http://127.0.0.1:59136
+作品存储：F:\BaiduSyncdisk\Ai工具\视频拆解分析\数据
+请保持此启动窗口运行；按 Ctrl+C 退出。
+**********************
+Windows PowerShell transcript start
+Start time: 20260917175141
+Username: 联想2020\Administrator
+RunAs User: 联想2020\Administrator
+Configuration Name: 
+Machine: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Start
+Process ID: 15432
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Start；时间：2026-09-17 17:51:41
+日志：F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\start.log
+检查本机环境，请稍候。
+本机环境可用，直接复用。
+正在打开工作台。请保留此后台窗口，退出后台可按 Ctrl+C。
+视频重创工作台 v0.2.18 已启动。
+本机地址：http://127.0.0.1:55052
+作品存储：F:\BaiduSyncdisk\Ai工具\视频拆解分析\数据
+请保持此启动窗口运行；按 Ctrl+C 退出。
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49962)
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20260928135236
+用户名: 联想2020\Administrator
+RunAs 用户: 联想2020\Administrator
+配置名称: 
+计算机: 联想2020 (Microsoft Windows NT 10.0.26100.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1 -Mode Start
+进程 ID: 24936
+PSVersion: 5.1.26100.3624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.3624
+BuildVersion: 10.0.26100.3624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+视频重创工作台 v0.2.5
+操作：Start；时间：2026-09-28 13:52:36
+日志：F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\start.log
+检查本机环境，请稍候。
+本机环境可用，直接复用。
+正在打开工作台。请保留此后台窗口，退出后台可按 Ctrl+C。
+视频重创工作台 v0.2.18 已启动。
+本机地址：http://127.0.0.1:49205
+作品存储：F:\BaiduSyncdisk\Ai工具\视频拆解分析\数据
+请保持此启动窗口运行；按 Ctrl+C 退出。
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52582)
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 419, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socket.py", line 723, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 61999)
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 57069)
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 57404)
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 54712)  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+System.Management.Automation.RemoteException
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58086)
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+----------------------------------------  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception occurred during processing of request from  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+   File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+('127.0.0.1', 63951)
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 453, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+--------------------------------------------------------------------------------  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+Exception occurred during processing of request fromException occurred during processing of request from ('127.0.0.1', 53122)
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+ ('127.0.0.1', 56997)
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 149, in do_GET
+    self.file(file, asset["mime"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 194, in file
+    self.wfile.write(chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+System.Management.Automation.RemoteException
+During handling of the above exception, another exception occurred:
+System.Management.Automation.RemoteException
+Traceback (most recent call last):
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 451, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 439, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 162, in do_GET
+    self.json({"error": clean_error(exc)}, 404)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 74, in json
+    self.headers_out(status, "application/json; charset=utf-8", len(body), extra)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+  File "F:\BaiduSyncdisk\Ai工具\视频拆解分析\VideoRemixStudio_v0.2.18\studio\server.py", line 70, in headers_out
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 553, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\软件安装\新建文件夹\Lib\http\server.py", line 557, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\软件安装\新建文件夹\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
